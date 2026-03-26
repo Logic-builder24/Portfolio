@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initCounterAnimation();
   injectProjectLinks();
   initParticles();
+  initResumePreview();
 });
 
 // ============================================================
@@ -204,7 +205,7 @@ function initTypingAnimation() {
   const typingEl = document.getElementById("typingText");
   if (!typingEl) return;
 
-  const roles = ["Frontend Developer", "Web Developer", "Problem Solver", "CS Undergrad"];
+  const roles = ["Data Analyst", "Python Developer", "Problem Solver", "CS Undergrad"];
   let roleIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
@@ -355,4 +356,21 @@ function initParticles() {
     particle.style.opacity = Math.random() * 0.15 + 0.05;
     container.appendChild(particle);
   }
+}
+
+// ============================================================
+// 11. RESUME HOVER PREVIEW (Mac-style)
+// ============================================================
+function initResumePreview() {
+  const card = document.getElementById('resumeCard');
+  const overlay = document.getElementById('resumeOverlay');
+  if (!card || !overlay) return;
+
+  card.addEventListener('mouseenter', () => {
+    overlay.classList.add('hidden');
+  });
+
+  card.addEventListener('mouseleave', () => {
+    overlay.classList.remove('hidden');
+  });
 }

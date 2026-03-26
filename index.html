@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Primary SEO -->
-  <title>Jai Dev Meena — Frontend Developer & CS Undergrad</title>
-  <meta name="description" content="Portfolio of Jai Dev Meena, a Frontend Developer and B.Tech CSE student at LPU. Projects in web development, Python, and AI/ML." />
+  <title>Jai Dev Meena — Data Analyst & CS Undergrad</title>
+  <meta name="description" content="Portfolio of Jai Dev Meena, a Data Analyst and B.Tech CSE student at LPU. Projects in data analysis, Python, and AI/ML." />
   <meta name="author" content="Jai Dev Meena" />
-  <meta name="keywords" content="Jai Dev Meena, Frontend Developer, Portfolio, React, JavaScript, Python, LPU, CSE" />
+  <meta name="keywords" content="Jai Dev Meena, Data Analyst, Portfolio, Python, SQL, Power BI, LPU, CSE" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Jai Dev Meena — Frontend Developer" />
+  <meta property="og:title" content="Jai Dev Meena — Data Analyst" />
   <meta property="og:description" content="Portfolio of Jai Dev Meena. Projects in web development, data analysis and AI." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://logic-builder24.github.io/portfolio/" />
@@ -19,8 +19,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Jai Dev Meena — Frontend Developer" />
-  <meta name="twitter:description" content="Portfolio of Jai Dev Meena, CS undergrad and Frontend Developer." />
+  <meta name="twitter:title" content="Jai Dev Meena — Data Analyst" />
+  <meta name="twitter:description" content="Portfolio of Jai Dev Meena, CS undergrad and Data Analyst." />
   <meta name="twitter:image" content="./assets/og-preview.png" />
 
   <!-- Canonical -->
@@ -98,9 +98,15 @@
 
   <!-- ==================== HERO SECTION ==================== -->
   <section id="hero" class="hero">
+    <!-- Animated gradient orbs -->
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
     <!-- Background circles -->
     <div class="hero-bg-circle"></div>
     <div class="hero-bg-circle-2"></div>
+    <!-- Grid overlay -->
+    <div class="hero-grid-overlay"></div>
 
     <div class="container">
       <p class="hero-top-label fade-in">... / Jai Dev Meena ...</p>
@@ -108,8 +114,8 @@
       <div class="hero-content">
         <div class="hero-text">
           <h1 class="hero-title fade-in">
-            <span class="line-1"><span class="dots">... </span>Frontend</span>
-            <span class="line-2">Developer<span class="dots"> ...</span></span>
+            <span class="line-1"><span class="dots">... </span>Data</span>
+            <span class="line-2">Analyst<span class="dots"> ...</span></span>
           </h1>
 
           <div class="hero-typing fade-in" aria-live="polite">
@@ -173,7 +179,7 @@
       <div class="about-grid">
         <div class="about-text-col">
           <p class="about-bio fade-in">
-            Hello! I'm Jai Dev, a <strong><em>Frontend Developer</em></strong>
+            Hello! I'm Jai Dev, a <strong><em>Data Analyst</em></strong>
             &amp; <strong><em>CS undergrad</em></strong> with a passion for Data &amp; AI.<br /><br />
             Currently pursuing B.Tech in Computer Science
             at Lovely Professional University, Punjab.
@@ -183,8 +189,8 @@
           <div class="skill-cards stagger-children">
             <div class="skill-card fade-in">
               <span class="skill-card-icon">↗</span>
-              <h3 class="skill-card-title">Frontend</h3>
-              <p class="skill-card-content">HTML / CSS / JavaScript / React / Next.js / Express</p>
+              <h3 class="skill-card-title">Data & Analytics</h3>
+              <p class="skill-card-content">Python / Pandas / NumPy / Matplotlib / Seaborn / Power BI</p>
             </div>
             <div class="skill-card fade-in">
               <span class="skill-card-icon">↗</span>
@@ -209,7 +215,7 @@
             <div class="code-lines">
 <span class="keyword">const</span> <span class="func">developer</span> = {
   <span class="keyword">name</span>: <span class="string">"Jai Dev Meena"</span>,
-  <span class="keyword">role</span>: <span class="string">"Frontend Dev"</span>,
+  <span class="keyword">role</span>: <span class="string">"Data Analyst"</span>,
   <span class="keyword">passion</span>: <span class="string">"Clean Code"</span>,
   <span class="keyword">university</span>: <span class="string">"LPU"</span>,
   <span class="keyword">skills</span>: [
@@ -466,6 +472,66 @@
     </div>
   </div>
 
+  <!-- ==================== RESUME SECTION ==================== -->
+  <section id="resume" class="resume-section">
+    <div class="container">
+      <p class="section-label fade-in">... /Resume ...</p>
+      <h2 class="resume-title fade-in">My Resume</h2>
+
+      <div class="resume-dock fade-in">
+        <!-- Mac-style window preview card -->
+        <div class="resume-card glass-card" id="resumeCard">
+          <!-- Mac window chrome -->
+          <div class="mac-titlebar">
+            <span class="mac-dot mac-dot--red"></span>
+            <span class="mac-dot mac-dot--yellow"></span>
+            <span class="mac-dot mac-dot--green"></span>
+            <span class="mac-titlebar-text">JaiDevMeena_CV.pdf</span>
+          </div>
+
+          <!-- PDF preview area -->
+          <div class="resume-preview" id="resumePreview">
+            <iframe
+              src="./assets/JaiDevMeena_CV.pdf"
+              title="Resume Preview"
+              class="resume-iframe"
+              loading="lazy"
+            ></iframe>
+            <div class="resume-overlay" id="resumeOverlay">
+              <div class="resume-overlay-content">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                <p>Hover to preview</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mac dock-style actions -->
+          <div class="resume-actions">
+            <a
+              href="./assets/JaiDevMeena_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="resume-btn resume-btn--view glass-btn"
+              aria-label="View Resume in new tab"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              View Resume
+            </a>
+            <a
+              href="./assets/JaiDevMeena_CV.pdf"
+              download="JaiDevMeena_Resume.pdf"
+              class="resume-btn resume-btn--download glass-btn"
+              aria-label="Download Resume"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ==================== CONTACT SECTION ==================== -->
   <section id="contact" class="contact">
     <div class="container">
@@ -478,7 +544,7 @@
         <div class="contact-name fade-in">
           <span class="contact-name__first">Jai Dev</span>
           <span class="contact-name__last">Meena</span>
-          <p class="contact-subtitle">Frontend Developer &amp; CS Undergrad</p>
+          <p class="contact-subtitle">Data Analyst &amp; CS Undergrad</p>
         </div>
 
         <!-- Right: Links -->
