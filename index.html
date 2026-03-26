@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Jai Dev Meena — Frontend Developer & CS Undergrad</title>
+  <meta name="description" content="Portfolio of Jai Dev Meena, a Frontend Developer and B.Tech CSE student at LPU. Projects in web development, Python, and AI/ML." />
+  <meta name="author" content="Jai Dev Meena" />
+  <meta name="keywords" content="Jai Dev Meena, Frontend Developer, Portfolio, React, JavaScript, Python, LPU, CSE" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jai Dev Meena — Frontend Developer" />
+  <meta property="og:description" content="Portfolio of Jai Dev Meena. Projects in web development, data analysis and AI." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://logic-builder24.github.io/portfolio/" />
+  <meta property="og:image" content="./assets/og-preview.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jai Dev Meena — Frontend Developer" />
+  <meta name="twitter:description" content="Portfolio of Jai Dev Meena, CS undergrad and Frontend Developer." />
+  <meta name="twitter:image" content="./assets/og-preview.png" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://logic-builder24.github.io/portfolio/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/favicon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== LOADING SCREEN ==================== -->
+  <div class="loader-screen" id="loader">
+    <span class="loader-text">JD</span>
+  </div>
+
+  <!-- ==================== CUSTOM CURSOR ==================== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo" aria-label="Scroll to top">Jai Dev</a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certificates" class="nav-link">Certificates</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <a
+        href="./assets/JaiDevMeena_CV.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        download="JaiDevMeena_CV.pdf"
+        aria-label="Download Jai Dev Meena's CV"
+        class="nav-cta desktop-cta"
+      >
+        Download CV
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="mobile-nav-overlay" id="mobileNav">
+    <a href="#about" class="nav-link">About</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#certificates" class="nav-link">Certificates</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <a
+      href="./assets/JaiDevMeena_CV.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      download="JaiDevMeena_CV.pdf"
+      class="nav-cta"
+    >
+      Download CV
+    </a>
+  </div>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="hero" class="hero">
+    <!-- Background circles -->
+    <div class="hero-bg-circle"></div>
+    <div class="hero-bg-circle-2"></div>
+
+    <div class="container">
+      <p class="hero-top-label fade-in">... / Jai Dev Meena ...</p>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title fade-in">
+            <span class="line-1"><span class="dots">... </span>Frontend</span>
+            <span class="line-2">Developer<span class="dots"> ...</span></span>
+          </h1>
+
+          <div class="hero-typing fade-in" aria-live="polite">
+            <span id="typingText"></span><span class="cursor-blink"></span>
+          </div>
+
+          <p class="hero-subtitle fade-in">
+            My goal is to write <em>maintainable, clean</em><br />
+            and <em>understandable code</em>.
+          </p>
+
+          <div class="social-links fade-in" role="list" aria-label="Social media and contact links">
+            <a
+              href="https://github.com/Logic-builder24"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              aria-label="GitHub Profile (opens in new tab)"
+              role="listitem"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jai-dev-meena893144281/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              aria-label="LinkedIn Profile (opens in new tab)"
+              role="listitem"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href="mailto:mjai9127@gmail.com"
+              class="social-link"
+              aria-label="Send Email to Jai Dev Meena"
+              role="listitem"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-cta-area fade-in">
+          <a href="#projects" class="btn-primary" id="heroProjectsBtn">
+            Projects <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT SECTION ==================== -->
+  <section id="about" class="about">
+    <div class="container">
+      <p class="section-label fade-in">... /About me ...</p>
+
+      <div class="about-grid">
+        <div class="about-text-col">
+          <p class="about-bio fade-in">
+            Hello! I'm Jai Dev, a <strong><em>Frontend Developer</em></strong>
+            &amp; <strong><em>CS undergrad</em></strong> with a passion for Data &amp; AI.<br /><br />
+            Currently pursuing B.Tech in Computer Science
+            at Lovely Professional University, Punjab.
+            More than <strong>1 year</strong> of building projects.
+          </p>
+
+          <div class="skill-cards stagger-children">
+            <div class="skill-card fade-in">
+              <span class="skill-card-icon">↗</span>
+              <h3 class="skill-card-title">Frontend</h3>
+              <p class="skill-card-content">HTML / CSS / JavaScript / React / Next.js / Express</p>
+            </div>
+            <div class="skill-card fade-in">
+              <span class="skill-card-icon">↗</span>
+              <h3 class="skill-card-title">Styles</h3>
+              <p class="skill-card-content">Bootstrap / CSS / Responsive Design</p>
+            </div>
+            <div class="skill-card fade-in">
+              <span class="skill-card-icon">↗</span>
+              <h3 class="skill-card-title">Back-end & Databases</h3>
+              <p class="skill-card-content">Node.js / PHP / Python / MongoDB / MySQL / SQL</p>
+            </div>
+            <div class="skill-card fade-in">
+              <span class="skill-card-icon">↗</span>
+              <h3 class="skill-card-title">Tools & Platforms</h3>
+              <p class="skill-card-content">Git / GitHub / VS Code / Firebase / Streamlit</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual fade-in">
+          <div class="decorative-box">
+            <div class="code-lines">
+<span class="keyword">const</span> <span class="func">developer</span> = {
+  <span class="keyword">name</span>: <span class="string">"Jai Dev Meena"</span>,
+  <span class="keyword">role</span>: <span class="string">"Frontend Dev"</span>,
+  <span class="keyword">passion</span>: <span class="string">"Clean Code"</span>,
+  <span class="keyword">university</span>: <span class="string">"LPU"</span>,
+  <span class="keyword">skills</span>: [
+    <span class="string">"React"</span>,
+    <span class="string">"JavaScript"</span>,
+    <span class="string">"Python"</span>,
+    <span class="string">"Node.js"</span>
+  ],
+  <span class="func">build</span>: () => <span class="string">"amazing"</span>
+};
+            </div>
+          </div>
+          <div class="decorative-circle"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS SECTION ==================== -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="projects-header">
+        <p class="section-label fade-in">... /Projects ...</p>
+        <h2 class="projects-title fade-in">Projects</h2>
+      </div>
+
+      <!-- Project 1 -->
+      <div class="project-card fade-in" data-project="hospital">
+        <div class="project-info">
+          <p class="project-period">Sep 2024 – Dec 2024</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">PHP</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Firebase</span>
+          </div>
+          <h3 class="project-name">Hospital Appointment Scheduler</h3>
+          <p class="project-desc">
+            Full-stack online appointment system with patient registration/login,
+            streamlined booking workflows, automated reminders, and secure data
+            handling. Real-time doctor availability with dynamic slot updates.
+            Built a comprehensive doctor/admin dashboard.
+          </p>
+          <div class="project-actions">
+            <a
+              href="https://github.com/Logic-builder24"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link project-link--github"
+              aria-label="View Hospital Appointment Scheduler on GitHub (opens in new tab)"
+            >
+              <span>GitHub</span> <span class="link-icon">↗</span>
+            </a>
+            <a
+              href="#"
+              class="project-link project-link--live project-link--disabled"
+              aria-label="Live demo coming soon"
+              aria-disabled="true"
+              tabindex="-1"
+              title="Link coming soon"
+            >
+              <span>Live</span> <span class="link-icon">↗</span>
+            </a>
+          </div>
+        </div>
+        <div class="project-visual">
+          <span class="placeholder-icon">🏥</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card fade-in" data-project="election">
+        <div class="project-info">
+          <p class="project-period">Jun 2025 – Aug 2025</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Matplotlib</span>
+            <span class="tag">Seaborn</span>
+          </div>
+          <h3 class="project-name">Election Analysis Dashboard</h3>
+          <p class="project-desc">
+            Cleaned and analysed real-world election datasets. Performed EDA to
+            identify voting patterns, turnout variations, and party performance.
+            Generated visual and statistical insights on voter behaviour and
+            demographic influences across regions.
+          </p>
+          <div class="project-actions">
+            <a
+              href="https://github.com/Logic-builder24"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link project-link--github"
+              aria-label="View Election Analysis Dashboard on GitHub (opens in new tab)"
+            >
+              <span>GitHub</span> <span class="link-icon">↗</span>
+            </a>
+            <a
+              href="#"
+              class="project-link project-link--live project-link--disabled"
+              aria-label="Live demo coming soon"
+              aria-disabled="true"
+              tabindex="-1"
+              title="Link coming soon"
+            >
+              <span>Live</span> <span class="link-icon">↗</span>
+            </a>
+          </div>
+        </div>
+        <div class="project-visual">
+          <span class="placeholder-icon">📊</span>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card fade-in" data-project="chatbot">
+        <div class="project-info">
+          <p class="project-period">Oct 2025 – Dec 2025</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">Gemini API</span>
+            <span class="tag">NLTK</span>
+          </div>
+          <h3 class="project-name">History Chatbot</h3>
+          <p class="project-desc">
+            Interactive AI chatbot answering historical questions using NLP
+            techniques — tokenization, stemming, and intent detection. Integrated
+            Gemini API for generative responses. Deployed with a clean Streamlit UI.
+          </p>
+          <div class="project-actions">
+            <a
+              href="https://github.com/Logic-builder24"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link project-link--github"
+              aria-label="View History Chatbot on GitHub (opens in new tab)"
+            >
+              <span>GitHub</span> <span class="link-icon">↗</span>
+            </a>
+            <a
+              href="#"
+              class="project-link project-link--live project-link--disabled"
+              aria-label="Live demo coming soon"
+              aria-disabled="true"
+              tabindex="-1"
+              title="Link coming soon"
+            >
+              <span>Live</span> <span class="link-icon">↗</span>
+            </a>
+          </div>
+        </div>
+        <div class="project-visual">
+          <span class="placeholder-icon">🤖</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CERTIFICATES SECTION ==================== -->
+  <section id="certificates" class="certificates">
+    <div class="container">
+      <div class="certificates-header">
+        <p class="section-label fade-in">... /Certificates ...</p>
+        <h2 class="certificates-title fade-in">Certificates</h2>
+      </div>
+
+      <div class="cert-grid stagger-children">
+        <div class="cert-card fade-in">
+          <div class="cert-icon">🎓</div>
+          <h3 class="cert-name">Python ML/AI</h3>
+          <p class="cert-issuer">CSE PathSala</p>
+          <p class="cert-date">March 2024</p>
+        </div>
+        <div class="cert-card fade-in">
+          <div class="cert-icon">🏆</div>
+          <h3 class="cert-name">Hackathon — Top 20</h3>
+          <p class="cert-issuer">March 2024</p>
+          <p class="cert-extra">Problem-solving &amp; teamwork</p>
+        </div>
+        <div class="cert-card fade-in">
+          <div class="cert-icon">🤖</div>
+          <h3 class="cert-name">AI Tools Workshop</h3>
+          <p class="cert-issuer">Be10X</p>
+          <p class="cert-date">September 2025</p>
+        </div>
+        <div class="cert-card fade-in">
+          <div class="cert-icon">📊</div>
+          <h3 class="cert-name">Power BI Workshop</h3>
+          <p class="cert-issuer">OfficeMaster</p>
+          <p class="cert-date">September 2025</p>
+        </div>
+        <div class="cert-card fade-in">
+          <div class="cert-icon">🧮</div>
+          <h3 class="cert-name">Computational Theory</h3>
+          <p class="cert-issuer">Infosys</p>
+          <p class="cert-date">August 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EDUCATION SECTION ==================== -->
+  <section id="education" class="education">
+    <div class="container">
+      <p class="section-label fade-in">... /Education ...</p>
+      <h2 class="education-title fade-in">Education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item current fade-in">
+          <div class="timeline-dot"></div>
+          <p class="timeline-date">2023 – Present</p>
+          <h3 class="timeline-title">B.Tech Computer Science &amp; Engineering</h3>
+          <p class="timeline-place">Lovely Professional University, Punjab, India</p>
+          <p class="timeline-detail">CGPA: 6.38</p>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <p class="timeline-date">Matriculation (10th)</p>
+          <h3 class="timeline-title">Matriculation</h3>
+          <p class="timeline-place">Eklavya International Academy, Jaipur, India</p>
+          <p class="timeline-detail">Percentage: 71.2%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== STATS BAR ==================== -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-in">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Projects Shipped</span>
+        </div>
+        <div class="stat-item fade-in">
+          <span class="stat-number" data-target="5">0</span>
+          <span class="stat-label">Certificates</span>
+        </div>
+        <div class="stat-item fade-in">
+          <span class="stat-number" data-target="1">0</span>
+          <span class="stat-label">Hackathon (Top 20)</span>
+        </div>
+        <div class="stat-item fade-in">
+          <span class="stat-number" data-target="2" data-suffix="+">0</span>
+          <span class="stat-label">Years Coding</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-header">
+        <p class="section-label fade-in">... /Contacts ...</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Left: Large name -->
+        <div class="contact-name fade-in">
+          <span class="contact-name__first">Jai Dev</span>
+          <span class="contact-name__last">Meena</span>
+          <p class="contact-subtitle">Frontend Developer &amp; CS Undergrad</p>
+        </div>
+
+        <!-- Right: Links -->
+        <div class="contact-links fade-in">
+          <nav class="contact-nav" aria-label="Page navigation">
+            <a href="#hero">Main</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+          </nav>
+
+          <ul class="contact-details" aria-label="Contact information">
+            <li>
+              <span class="contact-label">Email</span>
+              <a href="mailto:mjai9127@gmail.com" class="contact-value">
+                mjai9127@gmail.com
+              </a>
+            </li>
+            <li>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+918209926739" class="contact-value" aria-label="Call Jai Dev Meena">
+                +91 82099 26739
+              </a>
+            </li>
+            <li>
+              <span class="contact-label">LinkedIn</span>
+              <a
+                href="https://www.linkedin.com/in/jai-dev-meena893144281/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-value"
+              >
+                jai-dev-meena893144281 ↗
+              </a>
+            </li>
+            <li>
+              <span class="contact-label">GitHub</span>
+              <a
+                href="https://github.com/Logic-builder24"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-value"
+              >
+                Logic-builder24 ↗
+              </a>
+            </li>
+          </ul>
+
+          <div class="contact-cv">
+            <a
+              href="./assets/JaiDevMeena_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline"
+            >
+              View / Download CV ↗
+            </a>
+          </div>
+
+          <p class="contact-credits">
+            Built by Jai Dev Meena /<br />
+            Designed with ♥ /<br />
+            Powered by HTML + CSS + JS
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer bottom bar -->
+      <div class="footer-bar">
+        <div class="footer-social">
+          <a href="https://github.com/Logic-builder24" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/jai-dev-meena893144281/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:mjai9127@gmail.com" aria-label="Send email">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+        </div>
+        <p>© 2025 Jai Dev Meena · All rights reserved</p>
+        <a href="#hero" class="back-to-top" aria-label="Back to top">↑ Top</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SCRIPT ==================== -->
+  <script src="script.js"></script>
+</body>
+</html>
