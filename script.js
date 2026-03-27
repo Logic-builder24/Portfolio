@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initCounterAnimation();
   injectProjectLinks();
   initParticles();
-  initResumePreview();
 });
 
 // ============================================================
@@ -358,19 +357,4 @@ function initParticles() {
   }
 }
 
-// ============================================================
-// 11. RESUME HOVER PREVIEW (Mac-style)
-// ============================================================
-function initResumePreview() {
-  const card = document.getElementById('resumeCard');
-  const overlay = document.getElementById('resumeOverlay');
-  if (!card || !overlay) return;
 
-  card.addEventListener('mouseenter', () => {
-    overlay.classList.add('hidden');
-  });
-
-  card.addEventListener('mouseleave', () => {
-    overlay.classList.remove('hidden');
-  });
-}
